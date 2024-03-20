@@ -1,0 +1,26 @@
+2024-03-15T17:36:57|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\LAB\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\hardware.py", line 220, in enable_connection
+    raise err
+  File "C:\Users\LAB\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\hardware.py", line 210, in enable_connection
+    self.connect()
+  File "C:\Users\LAB\Scopefoundry_projects\Flir_ScopeFoundry\camera_hw.py", line 35, in connect
+    self.camera = FlirDevice(debug=self.debug_mode.val)
+  File "C:\Users\LAB\Scopefoundry_projects\Flir_ScopeFoundry\camera_device.py", line 21, in __init__
+    self.cam = Camera()
+  File "C:\Users\LAB\anaconda3\envs\scopefoundry\lib\site-packages\simple_pyspin\__init__.py", line 109, in __init__
+    raise CameraError("No cameras detected.")
+simple_pyspin.CameraError: No cameras detected.
+
+2024-03-15T17:37:24|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\LAB\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\hardware.py", line 220, in enable_connection
+    raise err
+  File "C:\Users\LAB\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\hardware.py", line 210, in enable_connection
+    self.connect()
+  File "C:\Users\LAB\Scopefoundry_projects\Flir_ScopeFoundry\camera_hw.py", line 35, in connect
+    self.camera = FlirDevice(debug=self.debug_mode.val)
+  File "C:\Users\LAB\Scopefoundry_projects\Flir_ScopeFoundry\camera_device.py", line 21, in __init__
+    self.cam = Camera()
+  File "C:\Users\LAB\anaconda3\envs\scopefoundry\lib\site-packages\simple_pyspin\__init__.py", line 109, in __init__
+    raise CameraError("No cameras detected.")
+simple_pyspin.CameraError: No cameras detected.
+

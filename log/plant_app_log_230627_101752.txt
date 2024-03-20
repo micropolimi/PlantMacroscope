@@ -1,0 +1,29 @@
+2023-06-27T10:20:38|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\GiorgiaT\OneDrive - Politecnico di Milano\Desktop\Python\ScopeFoundryProjects\Plant_Macroscope\plant_measure.py", line 151, in run
+    self.img = self.image_gen.camera.get_nparray()
+  File "C:\Users\GiorgiaT\OneDrive - Politecnico di Milano\Desktop\Python\ScopeFoundryProjects\Flir_ScopeFoundry\camera_device.py", line 68, in get_nparray
+    return self.cam.get_array()
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\simple_pyspin\__init__.py", line 221, in get_array
+    img = self.cam.GetNextImage(PySpin.EVENT_TIMEOUT_INFINITE if wait else PySpin.EVENT_TIMEOUT_NONE)
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\PySpin\PySpin.py", line 34318, in GetNextImage
+    return _PySpin._SWIG_CamPtr_GetNextImage(self, *args)
+_PySpin.SpinnakerException: Spinnaker: Stream has been aborted. [-1012]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 25, in run
+    self.measurement._thread_run()
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 230, in _thread_run
+    self.run()
+  File "C:\Users\GiorgiaT\OneDrive - Politecnico di Milano\Desktop\Python\ScopeFoundryProjects\Plant_Macroscope\plant_measure.py", line 163, in run
+    self.image_gen.camera.acq_stop()
+  File "C:\Users\GiorgiaT\OneDrive - Politecnico di Milano\Desktop\Python\ScopeFoundryProjects\Flir_ScopeFoundry\camera_device.py", line 71, in acq_stop
+    self.cam.stop()
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\simple_pyspin\__init__.py", line 186, in stop
+    self.cam.EndAcquisition()
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\PySpin\PySpin.py", line 34235, in EndAcquisition
+    return _PySpin._SWIG_CamPtr_EndAcquisition(self)
+_PySpin.SpinnakerException: Spinnaker: Camera is not started. [-1002]
+
+2023-06-27T10:21:03|ERROR|camera_app|tried to disconnect FLIRhw: Spinnaker: Camera is not started. [-1002]

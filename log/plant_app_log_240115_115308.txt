@@ -1,0 +1,1 @@
+2024-01-15T12:01:52|ERROR|camera_app|tried to disconnect DLP_IO: WriteFile failed (PermissionError(13, 'Access is denied.', None, 5))

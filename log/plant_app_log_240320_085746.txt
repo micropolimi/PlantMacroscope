@@ -1,0 +1,19 @@
+2024-03-20T09:05:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\LAB\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 25, in run
+    self.measurement._thread_run()
+  File "C:\Users\LAB\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 230, in _thread_run
+    self.run()
+  File "C:\Users\LAB\Scopefoundry_projects\Plant_Macroscope\plant_timelapse_measure.py", line 165, in run
+    self.image_gen.read_from_hardware()
+  File "C:\Users\LAB\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\hardware.py", line 187, in read_from_hardware
+    lq.read_from_hardware()
+  File "C:\Users\LAB\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\logged_quantity.py", line 195, in read_from_hardware
+    val = self.hardware_read_func()
+  File "C:\Users\LAB\Scopefoundry_projects\Flir_ScopeFoundry\camera_device.py", line 53, in read_temperature
+    resp = self.cam.DeviceTemperature
+  File "C:\Users\LAB\anaconda3\envs\scopefoundry\lib\site-packages\simple_pyspin\__init__.py", line 236, in __getattr__
+    return prop.GetValue()
+  File "C:\Users\LAB\anaconda3\envs\scopefoundry\lib\site-packages\PySpin\PySpin.py", line 9488, in GetValue
+    return _PySpin._SWIG_CFltPtr_GetValue(self, Verify, IgnoreCache)
+_PySpin.SpinnakerException: Spinnaker: Error reading from Device [SN:14103019], at register address: F0F0082C. Please try reconnecting the device. [-1006]
+

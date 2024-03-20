@@ -1,0 +1,33 @@
+2023-03-07T08:52:37|CRITICAL|root|Unhandled exception:TypeError: setValue(self, int): argument 1 has unexpected type 'float'
+
+2023-03-07T08:53:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 244, in start_stop
+    self._start()
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 143, in _start
+    self.display_update_timer.start(self.display_update_period*1000)
+TypeError: arguments did not match any overloaded call:
+  start(self, int): argument 1 has unexpected type 'float'
+  start(self): too many arguments
+
+2023-03-07T08:54:12|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\GiorgiaT\OneDrive - Politecnico di Milano\Desktop\Python\ScopeFoundryProjects\Plant_Macroscope\plant_measure.py", line 150, in run
+    self.img = self.image_gen.camera.get_nparray()
+  File "C:\Users\GiorgiaT\OneDrive - Politecnico di Milano\Desktop\Python\ScopeFoundryProjects\Flir_ScopeFoundry\camera_device.py", line 68, in get_nparray
+    return self.cam.get_array()
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\simple_pyspin\__init__.py", line 221, in get_array
+    img = self.cam.GetNextImage(PySpin.EVENT_TIMEOUT_INFINITE if wait else PySpin.EVENT_TIMEOUT_NONE)
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\PySpin\PySpin.py", line 34318, in GetNextImage
+    return _PySpin._SWIG_CamPtr_GetNextImage(self, *args)
+_PySpin.SpinnakerException: Spinnaker: Stream is not started [-1010]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 25, in run
+    self.measurement._thread_run()
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 179, in _thread_run
+    self.run()
+  File "C:\Users\GiorgiaT\OneDrive - Politecnico di Milano\Desktop\Python\ScopeFoundryProjects\Plant_Macroscope\plant_measure.py", line 162, in run
+    self.image_gen.camera.acq_stop()
+AttributeError: 'FlirHW' object has no attribute 'camera'
+

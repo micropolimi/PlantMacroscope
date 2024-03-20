@@ -1,0 +1,7 @@
+2023-05-24T10:29:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 313, in start_stop
+    self._start()
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 155, in _start
+    raise RuntimeError("Cannot start a new measurement while still measuring {} {}".format(self.acq_thread, self.is_measuring()))
+RuntimeError: Cannot start a new measurement while still measuring <ScopeFoundry.measurement.MeasurementQThread object at 0x0000015EB43FBBE0> True
+

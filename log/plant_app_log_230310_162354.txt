@@ -1,0 +1,2 @@
+2023-03-10T16:24:46|CRITICAL|root|Unhandled exception:TypeError: setValue(self, int): argument 1 has unexpected type 'float'
+

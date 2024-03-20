@@ -1,0 +1,15 @@
+2023-03-10T15:22:29|CRITICAL|root|Unhandled exception:TypeError: setValue(self, int): argument 1 has unexpected type 'float'
+
+2023-03-10T15:24:19|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\hardware.py", line 166, in <lambda>
+    op_button.clicked.connect(lambda checked, f=op_func: f())
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\hardware.py", line 283, in reload_code
+    x = xreload.xreload(mod)
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\xreload.py", line 48, in xreload
+    code = _extract_code(mod)
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\xreload.py", line 91, in _extract_code
+    stream, filename, (_, _, kind) = imp.find_module(modname, path)
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\imp.py", line 270, in find_module
+    raise RuntimeError("'path' must be None or a list, "
+RuntimeError: 'path' must be None or a list, not <class '_frozen_importlib_external._NamespacePath'>
+

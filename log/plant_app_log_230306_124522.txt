@@ -1,0 +1,22 @@
+2023-03-06T12:45:30|CRITICAL|root|Unhandled exception:TypeError: setValue(self, int): argument 1 has unexpected type 'float'
+
+2023-03-06T12:45:41|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 244, in start_stop
+    self._start()
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 143, in _start
+    self.display_update_timer.start(self.display_update_period*1000)
+TypeError: arguments did not match any overloaded call:
+  start(self, int): argument 1 has unexpected type 'float'
+  start(self): too many arguments
+
+2023-03-06T12:45:48|CRITICAL|root|Unhandled exception:TypeError: setValue(self, int): argument 1 has unexpected type 'float'
+
+2023-03-06T12:46:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 244, in start_stop
+    self._start()
+  File "C:\Users\GiorgiaT\anaconda3\envs\scopefoundry\lib\site-packages\ScopeFoundry\measurement.py", line 143, in _start
+    self.display_update_timer.start(self.display_update_period*1000)
+TypeError: arguments did not match any overloaded call:
+  start(self, int): argument 1 has unexpected type 'float'
+  start(self): too many arguments
+
